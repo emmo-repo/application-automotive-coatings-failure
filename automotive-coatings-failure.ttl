@@ -3,58 +3,297 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix emmo: <http://emmo.info/emmo#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix emmo: <https://w3id.org/emmo#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix chameo: <http://emmo.info/emmo/domain/chameo/chameo#> .
-@prefix nanoind: <http://emmo.info/emmo/domain/nanoind> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix chameo: <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
 @base <https://w3id.org/emmo/application/automotive-coatings-failure#> .
 
 <https://w3id.org/emmo/application/automotive-coatings-failure> rdf:type owl:Ontology ;
-                                     owl:imports <http://emmo.info/emmo/domain/chameo/chameo> ,
-                                                 <https://raw.githubusercontent.com/emmo-repo/EMMO/master/top/annotations.ttl> ;
-                                     <http://purl.org/dc/terms/abstract> "Multi-layer Automotive Coating Adhesion Failure ontology developed within the NanoMECommons project."@en ;
-                                     <http://purl.org/dc/terms/alternative> "Automotive Coating Adhesion Failure Ontology" ;
-                                     <http://purl.org/dc/terms/bibliographicCitation> "Work under review - not available yet" ;
-                                     <http://purl.org/dc/terms/contributor> "Goldbeck Consulting Ltd (UK)" ;
-                                     <http://purl.org/dc/terms/created> "2023-11-29" ;
-                                     <http://purl.org/dc/terms/creator> "Gerhard Goldbeck" ,
-                                                                        "Pierluigi Del Nostro" ;
-                                     <http://purl.org/dc/terms/description> "Multi-layer Automotive Coating Adhesion Failure Ontology"@en ;
-                                     <http://purl.org/dc/terms/hasFormat> <https://www.w3.org/TR/turtle/> ;
-                                     <http://purl.org/dc/terms/identifier> "https://w3id.org/emmo/application/automotive-coatings-failure" ;
-                                     <http://purl.org/dc/terms/issued> "" ;
-                                     <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                     <http://purl.org/dc/terms/modified> "2023-10-23T15:00:00Z" ;
-                                     <http://purl.org/dc/terms/publisher> "EMMC ASBL" ;
-                                     <http://purl.org/dc/terms/source> "" ;
-                                     <http://purl.org/dc/terms/title> "Multi-layer Automotive Coating Adhesion Failure Ontology"@en ;
-                                     <http://purl.org/ontology/bibo/doi> "" ;
-                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "maco"@en ;
-                                     <http://purl.org/vocab/vann/preferredNamespaceUri> "http://emmo.info/emmo/domain/chameo/chameo" ;
-                                     rdfs:comment """Contacts:
-													Gerhard Goldbeck
-													Goldbeck Consulting Ltd (UK)
-													email: gerhard@goldbeck-consulting.com"""@en ;
-                                     owl:backwardCompatibleWith "" ;
-                                     owl:priorVersion "" ;
-                                     owl:versionInfo "1.0.0-alpha1" ;
-                                     skos:hiddenLabel "Multi-layer Automotive Coating Adhesion Failure Ontology" ;
-                                     <http://xmlns.com/foaf/0.1/homepage> <https://github.com/pierluigidelnostro/domain-multilayer-automotive-coating-failure> ;
-                                     <http://xmlns.com/foaf/0.1/page> <https://github.com/pierluigidelnostro/domain-multilayer-automotive-coating-failure> .
+                                                                 owl:imports <https://w3id.org/emmo/domain/nanoindentation> ;
+                                                                 dcterms:abstract "Application ontology for Multi-layered Automotive Coating Adhesion Failure testing developed within the NanoMECommons project."@en ;
+                                                                 dcterms:alternative "HiStSt" ;
+                                                                 dcterms:bibliographicCitation "Work under review - not available yet" ;
+                                                                 dcterms:contributor "Goldbeck Consulting Ltd (UK)" ;
+                                                                 dcterms:created "2024-11-12" ;
+                                                                 dcterms:creator "Gerhard Goldbeck" ,
+                                                                                 "Pierluigi Del Nostro" ;
+                                                                 dcterms:description "Multi-layered Automotive Coating Adhesion Failure testing ontology"@en ;
+                                                                 dcterms:hasFormat <https://www.w3.org/TR/turtle/> ;
+                                                                 dcterms:identifier "https://w3id.org/emmo/application/automotive-coatings-failure" ;
+                                                                 dcterms:issued "" ;
+                                                                 dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                                                 dcterms:modified "2023-10-23T15:00:00Z" ;
+                                                                 dcterms:publisher "EMMC ASBL" ;
+                                                                 dcterms:source "" ;
+                                                                 dcterms:title "Multi-layered Automotive Coating Adhesion Failure testing ontology"@en ;
+                                                                 bibo:doi "" ;
+                                                                 vann:preferredNamespacePrefix "histst"@en ;
+                                                                 vann:preferredNamespaceUri "https://w3id.org/emmo/application/automotive-coatings-failure" ;
+                                                                 rdfs:comment """Contacts:
+													                            Gerhard Goldbeck
+													                            Goldbeck Consulting Ltd (UK)
+													                            email: gerhard@goldbeck-consulting.com"""@en ;
+                                                                 owl:backwardCompatibleWith "" ;
+                                                                 owl:priorVersion "" ;
+                                                                 owl:versionInfo "0.1.0" ;
+                                                                 skos:hiddenLabel "Multi-layered Automotive Coating Adhesion Failure testing ontology" ;
+                                                                 foaf:homepage <https://github.com/emmo-repo/application-automotive-coatings-failure> ;
+                                                                 foaf:page <https://github.com/emmo-repo/application-automotive-coatings-failure> .
 
 #################################################################
 #    Classes
 #################################################################
 
+###  https://w3id.org/emmo/application/automotive-coatings-failure#CalibrationForMultilayeredCoatingNanoindentation
+:CalibrationForMultilayeredCoatingNanoindentation rdf:type owl:Class ;
+                                                  rdfs:subClassOf <https://w3id.org/emmo/domain/nanoindentation#EMMO_b7264717-216e-46c6-9bf1-b17009a358c2> ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty emmo:EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d ;
+                                                                    owl:someValuesFrom :MultiLayeredNanoindentationCalibrationDataProcessing
+                                                                  ] ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty chameo:hasCharacterisationTask ;
+                                                                    owl:someValuesFrom <https://w3id.org/emmo/domain/nanoindentation#EMMO_2cc73574-eace-5e36-afb7-70a7cd61b217>
+                                                                  ] ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty chameo:hasCharacterisationTask ;
+                                                                    owl:someValuesFrom <https://w3id.org/emmo/domain/nanoindentation#EMMO_5ca6e1c1-93e9-5e1a-881b-2c2bd38074b1>
+                                                                  ] ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty chameo:hasReferenceSample ;
+                                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                    owl:onClass :Polycarbonate
+                                                                  ] ;
+                                                  rdfs:label "CalibrationForMultilayeredCoatingNanoindentation" ;
+                                                  skos:prefLabel "CalibrationForMultilayeredCoatingNanoindentation" ;
+                                                  emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Calibration process before performing High-speed Nanoindentation on multi-layered automotive coating"@en .
+
+
 ###  https://w3id.org/emmo/application/automotive-coatings-failure#CryoMicrotomeCut
 :CryoMicrotomeCut rdf:type owl:Class ;
-                  rdfs:subClassOf chameo:SamplePreparation .
+                  rdfs:subClassOf chameo:SamplePreparationByCutting ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty emmo:EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d ;
+                                    owl:someValuesFrom :MultiLayeredCoatingSampleQualityCLSM
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty chameo:hasSamplePreparationParameter ;
+                                    owl:someValuesFrom emmo:EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty chameo:hasSamplePreparationParameter ;
+                                    owl:someValuesFrom :CuttingSpeed
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass :MultiLayeredAutomotiveCoatingSample
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass :MultiLayeredCoatingSampleOnHolder
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty chameo:hasHolder ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass :MicrotomeHolder
+                                  ] ;
+                  rdfs:label "Cryo-Microtome cut"@en ;
+                  skos:prefLabel "CryoMicrotomeCut" ;
+                  emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """Prepare high-quality ultra- or semi-thin sections for TEM (transmission electron) or light microscope investigation whilst simultaneously creating perfectly smooth block face surfaces for atomic force, scanning electron, or incident light microscopy. For ultrathin cryo- sections or surfacing of cryogenic material, EM UC7 ultramicrotome was equiped with the EM FC7 low-temperature sectioning system. The machine can be used for soft materials like polymers. It is usually used in the cryo mode (-140°C or -80°C) but can also be used for room temperature sectioning. 
+Small part of coating released from the substrate, precut by razor blade to piramide shape, fixed in microtome holder."""@en ;
+                  emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The goal is to produce cross-section of multilayer coating with ultraflat surface for nanoindentation."@en .
 
 
-###  https://w3id.org/emmo/application/automotive-coatings-failure#MultilayeredAutomotiveCoatingAdhesionFailure
-:MultilayeredAutomotiveCoatingAdhesionFailure rdf:type owl:Class ;
-                                              rdfs:subClassOf chameo:CharacterisationWorkflow .
+###  https://w3id.org/emmo/application/automotive-coatings-failure#CuttingSpeed
+:CuttingSpeed rdf:type owl:Class ;
+              rdfs:subClassOf emmo:EMMO_81369540_1b0e_471b_9bae_6801af22800e ;
+              rdfs:label "CuttingSpeed" ;
+              skos:prefLabel "CuttingSpeed" ;
+              emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Cutting speed"@en .
+
+
+###  https://w3id.org/emmo/application/automotive-coatings-failure#HighSpeedNanoindentationOnMultilayeredCoating
+:HighSpeedNanoindentationOnMultilayeredCoating rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://w3id.org/emmo/domain/nanoindentation#EMMO_5ca6e1c1-93e9-5e1a-881b-2c2bd38074b1> ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty emmo:EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d ;
+                                                                 owl:someValuesFrom :MultiLayeredNanoindentationMeasurementDataProcessing
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 ;
+                                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                 owl:onClass <https://w3id.org/emmo/domain/nanoindentation#EMMO_2698edca-874c-5026-b61b-e7112014fdd1>
+                                                               ] ;
+                                               rdfs:label "HighSpeedNanoindentationOnMultilayeredCoating" ;
+                                               skos:prefLabel "HighSpeedNanoindentationOnMultilayeredCoating" ;
+                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Measurement of e-modulus, hardness on area of interest" .
+
+
+###  https://w3id.org/emmo/application/automotive-coatings-failure#IndentationLocationImage
+:IndentationLocationImage rdf:type owl:Class ;
+                          rdfs:subClassOf chameo:CharacterisationData ;
+                          rdfs:label "IndentationLocationImage" ;
+                          skos:prefLabel "IndentationLocationImage" ;
+                          emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "CLSM images collected after the Nanoindenatation test to record the location of indents."@en .
+
+
+###  https://w3id.org/emmo/application/automotive-coatings-failure#KeyenceCLSM
+:KeyenceCLSM rdf:type owl:Class ;
+             rdfs:subClassOf chameo:SampleInspectionInstrument ;
+             rdfs:label "KeyenceCLSM" ;
+             skos:prefLabel "KeyenceCLSM" ;
+             emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Laser scanning microscope" .
+
+
+###  https://w3id.org/emmo/application/automotive-coatings-failure#MicrotomeHolder
+:MicrotomeHolder rdf:type owl:Class ;
+                 rdfs:subClassOf chameo:Holder ;
+                 rdfs:label "MicrotomeHolder" ;
+                 skos:prefLabel "MicrotomeHolder" ;
+                 emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Microtome holder"@en .
+
+
+###  https://w3id.org/emmo/application/automotive-coatings-failure#MultiLayeredAutomotiveCoatingSample
+:MultiLayeredAutomotiveCoatingSample rdf:type owl:Class ;
+                                     rdfs:subClassOf chameo:Sample ;
+                                     rdfs:label "Multi-layered automotive coating sample"@en ;
+                                     skos:prefLabel "MultiLayeredAutomotiveCoatingSample" ;
+                                     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Multi-layered automotive coating sample composed by the following layers: 2-tone ClearCoat/ 2-tone BaseCoate/ ClearCoat/ BaseCoat/ Primer / e-coat"@en .
+
+
+###  https://w3id.org/emmo/application/automotive-coatings-failure#MultiLayeredCoatingIndentsLocationCLSM
+:MultiLayeredCoatingIndentsLocationCLSM rdf:type owl:Class ;
+                                        rdfs:subClassOf chameo:SampleInspection ;
+                                        rdfs:label "MultiLayeredCoatingIndentsLocationCLSM" ;
+                                        skos:prefLabel "MultiLayeredCoatingIndentsLocationCLSM" ;
+                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Microscopy images collected after Nanoindentation to observe indents location on the sample."@en .
+
+
+###  https://w3id.org/emmo/application/automotive-coatings-failure#MultiLayeredCoatingSampleOnHolder
+:MultiLayeredCoatingSampleOnHolder rdf:type owl:Class ;
+                                   rdfs:subClassOf chameo:PreparedSample ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ;
+                                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                     owl:onClass :MicrotomeHolder
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ;
+                                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                     owl:onClass :MultiLayeredAutomotiveCoatingSample
+                                                   ] ;
+                                   rdfs:label "MultiLayeredCoatingSampleOnHolder" ;
+                                   skos:prefLabel "MultiLayeredCoatingSampleOnHolder" ;
+                                   emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Cryo-cut coating film mounted in microtome holder"@en .
+
+
+###  https://w3id.org/emmo/application/automotive-coatings-failure#MultiLayeredCoatingSampleQualityCLSM
+:MultiLayeredCoatingSampleQualityCLSM rdf:type owl:Class ;
+                                      rdfs:subClassOf chameo:ConfocalMicroscopy ,
+                                                      chameo:SampleInspection ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty chameo:hasCharacterisationOutput ;
+                                                        owl:someValuesFrom :SampleQualityImage
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty chameo:hasSampleForInspection ;
+                                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                        owl:onClass :MultiLayeredCoatingSampleOnHolder
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty chameo:hasSampleInspectionInstrument ;
+                                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                        owl:onClass :KeyenceCLSM
+                                                      ] ;
+                                      rdfs:label "MultiLayeredCoatingSampleQualityCLSM" ;
+                                      skos:prefLabel "MultiLayeredCoatingSampleQualityCLSM" ;
+                                      emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Microscopy images collected after sample preparation to observe the quality of sample preparation."@en .
+
+
+###  https://w3id.org/emmo/application/automotive-coatings-failure#MultiLayeredNanoindentationCalibrationDataProcessing
+:MultiLayeredNanoindentationCalibrationDataProcessing rdf:type owl:Class ;
+                                                      rdfs:subClassOf chameo:DataPostProcessing ,
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty emmo:EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d ;
+                                                                        owl:someValuesFrom :HighSpeedNanoindentationOnMultilayeredCoating
+                                                                      ] ;
+                                                      rdfs:label "Calibration data post-processing for nanoindentation"@en ,
+                                                                 "MultiLayeredNanoindentationCalibrationDataProcessing" ;
+                                                      skos:prefLabel "MultiLayeredNanoindentationCalibrationDataProcessing" .
+
+
+###  https://w3id.org/emmo/application/automotive-coatings-failure#MultiLayeredNanoindentationMeasurementDataProcessing
+:MultiLayeredNanoindentationMeasurementDataProcessing rdf:type owl:Class ;
+                                                      rdfs:subClassOf chameo:DataPostProcessing ,
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty emmo:EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d ;
+                                                                        owl:someValuesFrom :MultiLayeredCoatingIndentsLocationCLSM
+                                                                      ] ;
+                                                      rdfs:label "MultiLayeredNanoindentationMeasurementDataProcessing" ;
+                                                      skos:prefLabel "MultiLayeredNanoindentationMeasurementDataProcessing" ;
+                                                      emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Nanoindentation measurement data post-processing"@en .
+
+
+###  https://w3id.org/emmo/application/automotive-coatings-failure#MultilayeredAutomotiveCoatingAdhesionFailureCharacterisationWorkflow
+:MultilayeredAutomotiveCoatingAdhesionFailureCharacterisationWorkflow rdf:type owl:Class ;
+                                                                      rdfs:subClassOf chameo:CharacterisationWorkflow ,
+                                                                                      [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                               owl:onProperty chameo:hasBeginCharacterisationTask ;
+                                                                                                               owl:someValuesFrom :CryoMicrotomeCut
+                                                                                                             ]
+                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                               owl:onProperty chameo:hasCharacterisationTask ;
+                                                                                                               owl:someValuesFrom :CalibrationForMultilayeredCoatingNanoindentation
+                                                                                                             ]
+                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                               owl:onProperty chameo:hasCharacterisationTask ;
+                                                                                                               owl:someValuesFrom :HighSpeedNanoindentationOnMultilayeredCoating
+                                                                                                             ]
+                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                               owl:onProperty chameo:hasCharacterisationTask ;
+                                                                                                               owl:someValuesFrom :MultiLayeredCoatingIndentsLocationCLSM
+                                                                                                             ]
+                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                               owl:onProperty chameo:hasCharacterisationTask ;
+                                                                                                               owl:someValuesFrom :MultiLayeredCoatingSampleQualityCLSM
+                                                                                                             ]
+                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                               owl:onProperty chameo:hasCharacterisationTask ;
+                                                                                                               owl:someValuesFrom :MultiLayeredNanoindentationCalibrationDataProcessing
+                                                                                                             ]
+                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                               owl:onProperty chameo:hasEndCharacterisationTask ;
+                                                                                                               owl:someValuesFrom :MultiLayeredNanoindentationMeasurementDataProcessing
+                                                                                                             ]
+                                                                                                           ) ;
+                                                                                        rdf:type owl:Class
+                                                                                      ] ;
+                                                                      rdfs:label "MultilayeredAutomotiveCoatingAdhesionFailureCharacterisationWorkflow"@en ;
+                                                                      skos:prefLabel "MultilayeredAutomotiveCoatingAdhesionFailureCharacterisationWorkflow" .
+
+
+###  https://w3id.org/emmo/application/automotive-coatings-failure#Polycarbonate
+:Polycarbonate rdf:type owl:Class ;
+               rdfs:subClassOf chameo:ReferenceSample ;
+               rdfs:label "PolycarbonateReferenceSample" ;
+               skos:prefLabel "PolycarbonateReferenceSample" ;
+               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Polycarbonate reference sample"@en .
+
+
+###  https://w3id.org/emmo/application/automotive-coatings-failure#SampleQualityImage
+:SampleQualityImage rdf:type owl:Class ;
+                    rdfs:subClassOf chameo:CharacterisationData ;
+                    rdfs:label "SampleQualityImage" ;
+                    skos:prefLabel "SampleQualityImage" ;
+                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "CLSM images to observe the quality of sample preparation."@en .
 
 
 ###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
