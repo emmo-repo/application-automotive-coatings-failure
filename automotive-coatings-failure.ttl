@@ -83,10 +83,6 @@
                                     owl:someValuesFrom :MultiLayeredCoatingSampleQualityCLSM
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty chameo:hasSampleInspectionInstrument ;
-                                    owl:someValuesFrom :LightMicroscopy
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
                                     owl:onProperty chameo:hasSamplePreparationParameter ;
                                     owl:someValuesFrom emmo:EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f
                                   ] ,
